@@ -1,24 +1,16 @@
-var pageTitleElement = document.getElementById("page-title");
-// Menyeleksi DOM berdasarkan Id element dan menampungnya ke dalam variabel. Isinya merupakan object HTML element
-
-var pageBoxElements = document.getElementsByClassName("page-box");
-// Menyeleksi DOM berdasarkan nama class element dan menampungnya ke dalam variabel. Isinya merupakan array dari object HTML element, walau <h1> hanya ada 1.
-
-var pageHeadings = document.getElementsByTagName("h1");
-// Menyeleksi DOM berdasarkan tag <h1> dan menampungnya ke dalam variabel. Isinya merupakan array dari object HTML element
-
-var pageTitleElementContent = pageTitleElement.innerHTML;
-console.log('isi <div id="page-title"> :' + pageTitleElementContent);
-// isi <div id="page-title"> adalah Sample Page Title
-
-// Meloop array pageBoxElements
-for(var i = 0; i < pageBoxElements.length; i++) {
-  var currentPageBoxElement         = pageBoxElements[i];
-  var currentPageBoxElementContent  = currentPageBoxElement.innerHTML;
-  console.log('isi <div class="page-box"> index ke ' + i + ': ' + currentPageBoxElementContent);
+var Heading1 = document.getElementsByTagName("h1");
+var paragrap = document.getElementsByClassName("change-all-of-me");
+var Heading2 = document.getElementsByTagName("h2");
+//
+//
+//
+document.getElementById("fill-me").innerHTML='HALO!';
+for (var i =0;i<paragrap.length;i++){
+  var par1 = paragrap[i];
+  var cparagrap = par1.innerHTML="Hallo juga !"
 }
-
-// Mengubah isi pageTitleElement dengan tag HTML
-pageTitleElement.innerHTML = '<h2>Updated Content of Page Title Element</h2>';
-var newPageTitleElementContent = pageTitleElement.innerHTML;
-console.log('isi baru dari <div id="page-title"> :' + newPageTitleElementContent);
+//for (var i =0;i<Heading2.length;i++){
+  var bheading = Heading2[0];
+  var cheading = bheading.innerHTML="Apa Kabar ???"
+//}
+//.innerHTML='<h2>Updated Content of Page Headings</h2>';
